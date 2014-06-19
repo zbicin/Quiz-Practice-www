@@ -1,4 +1,7 @@
 ﻿window.onerror = function (message, file, line) {
-    window.external.Notify("Error in Application: " +
-        message + ". Source File: " + file + ", Line: " + line);
+	/*if(typeof window != "undefined"
+		&& typeof window.external != "undefined") {
+		window.external.Notify("Error in Application: " +
+			message + ". Source File: " + file + ", Line: " + line);
+	}*/
 }
